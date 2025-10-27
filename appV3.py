@@ -13,9 +13,10 @@ import pandas as pd
 
 st.set_page_config(page_title="Local Housing Policy Tool", page_icon="🏘️", layout="centered")
 
-st.title("🏘️ Local Housing Policy Assessment Tool — V3")
+st.title("🏘️ Local Housing Policy Compass)
 st.markdown("""
-Welcome! Answer the four questions below to receive **tailored policy category recommendations** for your community.
+Welcome! This tool will provide guidance and direction for local governments seeking to solve their housing issues.
+Answer the four questions below to receive **tailored policy category recommendations** for your community.
 """)
 
 st.divider()
@@ -301,4 +302,5 @@ if st.button("📊 Generate Policy Recommendations"):
     }])
     csv = df.to_csv(index=False)
     st.download_button('Download Recommendation (CSV)', data=csv, file_name='policy_recommendation_v3.csv', mime='text/csv')
+
 
