@@ -54,7 +54,7 @@ except FileNotFoundError:
 st.subheader("1️⃣ Legal Authority")
 st.markdown("""
 What best describes your jurisdiction's legal authority to adopt housing policies?  
-*Research the level of preemptions that may exist for your community.*
+*Research the level of preemptions that may exist for your community. For quick reference view the below document.*
 """)
 st.markdown(
     '[🔗 View state-by-state Dillon Rule vs Home Rule map (ALEC White Paper, 2016)](https://alec.org/wp-content/uploads/2016/01/2016-ACCE-White-Paper-Dillon-House-Rule-Final.pdf)',
@@ -302,6 +302,7 @@ if st.button("📊 Generate Policy Recommendations"):
     }])
     csv = df.to_csv(index=False)
     st.download_button('Download Recommendation (CSV)', data=csv, file_name='policy_recommendation_v3.csv', mime='text/csv')
+
 
 
 
