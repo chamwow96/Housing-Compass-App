@@ -273,7 +273,7 @@ if page == "🏘️ Policy Assessment Tool":
 # -------------------------
 elif page == "📚 Literature Dataset":
     st.title("📚 Literature Dataset Viewer")
-    st.markdown("Below are the files used to synthesize research behind this tool.")
+    st.markdown("Below are the files used to synthesize the research behind this tool.")
 
     folder_path = "Literature Dataset"
     if not os.path.exists(folder_path):
