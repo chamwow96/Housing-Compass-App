@@ -87,7 +87,7 @@ if page == "🏘️ Policy Assessment Tool":
     st.subheader("3️⃣ Housing Market Dynamics")
     market = st.radio(
         "What best describes your local housing market?",
-        ["Hot Market", "Stable Market", "Weak/Declining Market"]
+        ["Hot Market (high demand, rising housing/land prices, robust development activity, low rental vacancy rates)", "Stable Market (moderate demand, some development activity, manageable affordability pressures)", "Weak/Declining Market (low demand, minimal-to-no development, property values stagnant or falling)"]
     )
 
     st.divider()
@@ -95,7 +95,7 @@ if page == "🏘️ Policy Assessment Tool":
     st.subheader("4️⃣ Primary Housing Challenge")
     challenge = st.radio(
         "What is your MOST pressing issue? Only select Multiple Crises if two or more challenges are equally critical.",
-        ["Supply Shortage", "Affordability Crisis", "Housing Quality", "Multiple Crises"]
+        ["Supply Shortage (not enough units, especially affordable ones)", "Affordability Crisis (rents/prices rising faster than incomes, displacement pressures)", "Housing Quality (aging stock, deep need for rehab, aging homeowner community)", "Multiple Crises (two or more equal issues)"]
     )
 
     st.divider()
