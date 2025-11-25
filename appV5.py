@@ -26,7 +26,7 @@ page = st.sidebar.radio(
 if page == "🏘️ Policy Assessment Tool":
     st.title("🏘️ Local Housing Policy Assessment Tool")
     st.markdown("""
-    Welcome! Answer the four questions below to receive **tailored policy category recommendations** for your community.
+    Welcome! Answer the four questions below to receive **tailored policy recommendations** for your community.
     """)
     st.divider()
 
@@ -184,7 +184,7 @@ if page == "🏘️ Policy Assessment Tool":
         return final_order, priority_order
 
     # -------------------------
-    # Guidance Dictionary (same as before)
+    # Guidance Dictionary
     # -------------------------
     GUIDANCE = {
     "Foundation-Building (FB)": (
@@ -209,9 +209,9 @@ if page == "🏘️ Policy Assessment Tool":
         "They help create long-term housing availability, but poorly designed programs may slow development or trigger NIMBY pushback."
     ),
     "Development Incentives (DI)": (
-        "Incentive programs encourage private developers to build housing that meets community goals. "
+        "Financial or regulatory incentive programs encourage private developers to build housing that meets community needs. "
         "Examples: fee waivers, expedited permitting, tax abatements, public land disposition, gap financing. "
-        "Most effective in active development markets where additional subsidies or process speed-ups can overcome cost barriers. "
+        "Most effective in active development markets where additional subsidies or process speed-ups can overcome cost barriers and where the jurisdiction is constrained legally. "
         "These tools can be politically sensitive, require financial resources, and may benefit developers more than residents directly."
     ),
     "Financial Assistance (FA)": (
