@@ -35,7 +35,7 @@ if page == "🏘️ Policy Assessment Tool":
     try:
         with open(pdf_path, "rb") as _pdf_file:
             pdf_bytes = _pdf_file.read()
-        st.markdown("### 📘 Local Housing Policy Toolkit")
+        st.markdown("### 📘 Local Housing Policy Compass Guide")
         st.markdown("For deeper context and step-by-step instructions on how to use this app:")
         col1, col2 = st.columns([1, 1])
         with col1:
